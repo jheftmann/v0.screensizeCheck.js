@@ -1,0 +1,17 @@
+/* CSS! */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: helvetica;
+  overflow: hidden;
+}
+
+.test {
+  height: 300px;
+  width: 400px;
+  background-color: red;
+}
