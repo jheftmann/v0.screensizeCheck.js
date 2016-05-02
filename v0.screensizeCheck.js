@@ -8,23 +8,25 @@ var screensizeCheck = function(xs, sm, md, lg, xl){
 
   var fn = function() {
 
-  	if (($(window).innerWidth()) <= screenXs) {
+    width = $(window).innerWidth();
+
+  	if (width <= screenXs) {
   	$('body').addClass('screen-xs');
   	$('body').removeClass('screen-sm screen-md screen-lg screen-xl');
   	}
-  	if (($(window).innerWidth()) > screenXs && ($(window).innerWidth()) < screenSm) {
+  	if (width > screenXs && width < screenSm) {
   	$('body').addClass('screen-sm');
   	$('body').removeClass('screen-xs screen-md screen-lg screen-xl');
   	}
-  	if (($(window).innerWidth()) >= screenSm && ($(window).innerWidth()) < screenMd) {
+  	if (width>= screenSm && width < screenMd) {
   	$('body').addClass('screen-md');
   	$('body').removeClass('screen-xs screen-sm screen-lg screen-xl');
   	}
-  	if (($(window).innerWidth()) >= screenMd && ($(window).innerWidth()) < screenLg) {
+  	if (width >= screenMd && width < screenLg) {
   	$('body').addClass('screen-lg');
   	$('body').removeClass('screen-xs screen-sm screen-md screen-xl');
   	}
-  	if (($(window).innerWidth()) >= screenLg) {
+  	if (width >= screenLg) {
   	$('body').addClass('screen-xl');
   	$('body').removeClass('screen-xs screen-sm screen-md screen-lg');
   	}
